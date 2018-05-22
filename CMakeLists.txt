@@ -22,6 +22,7 @@ endif(EMSCRIPTEN)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
 include_directories(${OXYGINE_FREETYPE_INCLUDE_DIRS})
+include_directories("/usr/include/freetype2")
 add_library(oxygine-freetype STATIC 
 	src/ResFontFT.cpp 
 	src/ResFontFT.h
